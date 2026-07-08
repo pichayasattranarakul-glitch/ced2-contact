@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <!-- โหลด Font Google Prompt และ Font Awesome สำหรับไอคอน -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #2b5876;
+        }
+
+        .name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 12px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-link i {
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+            margin-right: 12px;
+        }
+
+        /* โทนสีปุ่มแต่ละช่องทาง */
+        .phone { background-color: #2e7d32; }
+        .email { background-color: #d93025; }
+        .line { background-color: #06c755; }
+        .facebook { background-color: #1877f2; }
+        .website { background-color: #1e3c72; }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- รูปโปรไฟล์ (เปลี่ยน URL รูปตามต้องการ) -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+
+        <!-- ชื่อและตำแหน่ง/คณะ -->
+        <h1 class="name">ชื่อ-นามสกุล ของอาจารย์/คุณ</h1>
+        <p class="title">สาขาวิชา / คณะ / มหาวิทยาลัย</p>
+
+        <!-- ปุ่มลิงก์ช่องทางการติดต่อ -->
+        <div class="links-container">
+            <!-- เบอร์โทรศัพท์ (ใส่เบอร์ใน tel: ) -->
+            <a href="tel:0812345678" class="btn-link phone">
+                <i class="fa-solid fa-phone"></i> โทรศัพท์: 081-234-5678
+            </a>
+
+            <!-- อีเมล (ใส่ อีเมล ใน mailto: ) -->
+            <a href="mailto:email@example.com" class="btn-link email">
+                <i class="fa-solid fa-envelope"></i> อีเมลติดต่องาน
+            </a>
+
+            <!-- Line (ใส่ Line URL หรือ Line ID) -->
+            <a href="https://line.me/ti/p/~your_line_id" target="_blank" class="btn-link line">
+                <i class="fa-brands fa-line"></i> LINE Official / ID
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/yourprofile" target="_blank" class="btn-link facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <!-- เว็บไซต์ส่วนตัว / ผลงาน -->
+            <a href="https://yourwebsite.com" target="_blank" class="btn-link website">
+                <i class="fa-solid fa-globe"></i> เว็บไซต์ส่วนตัว / ผลงาน
+            </a>
+        </div>
+
+        <div class="footer">
+            Scan to Connect
+        </div>
+    </div>
+
+</body>
+</html>
