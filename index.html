@@ -35,17 +35,8 @@
             text-align: center;
         }
 
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-            border: 3px solid #2b5876;
-        }
-
         .name {
-            font-size: 1.15rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: #1e3c72;
             margin-bottom: 5px;
@@ -64,6 +55,7 @@
             gap: 12px;
         }
 
+        /* สไตล์สำหรับปุ่มที่เป็นลิงก์กดได้ */
         .btn-link {
             display: flex;
             align-items: center;
@@ -82,18 +74,31 @@
             box-shadow: 0 5px 12px rgba(0,0,0,0.15);
         }
 
-        .btn-link i {
+        .btn-link i, .email-box i {
             font-size: 1.2rem;
             width: 30px;
             text-align: center;
             margin-right: 12px;
         }
 
+        /* สไตล์สำหรับกล่องอีเมล (ไม่กดลิงก์ แสดงชื่ออีเมลอย่างเดียว) */
+        .email-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 0.95rem;
+            background-color: #d93025;
+            user-select: all; /* กดหรือคัดลอกข้อความอีเมลได้ง่าย */
+        }
+
         .phone { background-color: #2e7d32; }
-        .email { background-color: #d93025; }
         .line { background-color: #06c755; }
         .facebook { background-color: #1877f2; }
-        .youtube { background-color: #ff0000; } /* ปรับเป็นสีแดง YouTube */
+        .youtube { background-color: #ff0000; }
 
         .footer {
             margin-top: 25px;
@@ -104,8 +109,7 @@
 </head>
 <body>
 
-
-
+    <div class="card-container">
         <!-- Name information -->
         <h1 class="name">CED-Square Innovation center</h1>
         <p class="title">Asst. Prof. Dr. Bunyong Rungroungdouyboon / Thammasat University</p>
@@ -118,9 +122,9 @@
             </a>
 
             <!-- Email -->
-            <a href="mailto:rbunyong@engr.tu.ac.th" class="btn-link email">
-                <i class="fa-solid fa-envelope"></i> Email
-            </a>
+            <div class="email-box">
+                <i class="fa-solid fa-envelope"></i> rbunyong@engr.tu.ac.th
+            </div>
 
             <!-- Line -->
             <a href="https://line.me/R/ti/p/phone/66898154728" target="_blank" class="btn-link line">
