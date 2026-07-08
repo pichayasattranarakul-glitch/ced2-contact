@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+    <title>CED-Square Innovation Center</title>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -16,7 +16,7 @@
         }
 
         body {
-            background-color: #f4f7f9;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: #333;
             display: flex;
             justify-content: center;
@@ -29,116 +29,148 @@
             background: #ffffff;
             width: 100%;
             max-width: 400px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            padding: 30px 20px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+            padding: 35px 24px;
             text-align: center;
+            position: relative;
+        }
+
+        .card-header-bar {
+            width: 50px;
+            height: 5px;
+            background: #2563eb;
+            border-radius: 10px;
+            margin: 0 auto 20px auto;
         }
 
         .name {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             font-weight: 600;
-            color: #1e3c72;
-            margin-bottom: 5px;
-            line-height: 1.4;
+            color: #0f172a;
+            margin-bottom: 6px;
+            line-height: 1.3;
         }
 
         .title {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 25px;
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 28px;
+            font-weight: 400;
+            line-height: 1.4;
         }
 
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
 
-        /* สไตล์สำหรับปุ่มที่เป็นลิงก์กดได้ */
+        /* ปุ่มลิงก์สไตล์ Modern Minimalist */
         .btn-link {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            padding: 12px 20px;
-            border-radius: 12px;
+            padding: 14px 18px;
+            border-radius: 14px;
             text-decoration: none;
-            color: #fff;
+            color: #1e293b;
             font-weight: 500;
             font-size: 0.95rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            transition: all 0.25s ease;
         }
 
         .btn-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+            background-color: #ffffff;
+            border-color: #cbd5e1;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
         }
 
-        .btn-link i, .email-box i {
-            font-size: 1.2rem;
-            width: 30px;
-            text-align: center;
-            margin-right: 12px;
+        
+        .icon-box {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
         }
 
-        /* สไตล์สำหรับกล่องอีเมล (ไม่กดลิงก์ แสดงชื่ออีเมลอย่างเดียว) */
+        .phone .icon-box { background-color: #dcfce7; color: #16a34a; }
+        .email .icon-box { background-color: #fee2e2; color: #dc2626; }
+        .line .icon-box { background-color: #dcfce7; color: #06c755; }
+        .facebook .icon-box { background-color: #dbeafe; color: #2563eb; }
+        .youtube .icon-box { background-color: #fee2e2; color: #ff0000; }
+
+        /* กล่องอีเมล (ไม่เป็นลิงก์) */
         .email-box {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            padding: 12px 20px;
-            border-radius: 12px;
-            color: #fff;
+            padding: 14px 18px;
+            border-radius: 14px;
+            color: #1e293b;
             font-weight: 500;
             font-size: 0.95rem;
-            background-color: #d93025;
-            user-select: all; /* กดหรือคัดลอกข้อความอีเมลได้ง่าย */
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            user-select: all;
         }
 
-        .phone { background-color: #2e7d32; }
-        .line { background-color: #06c755; }
-        .facebook { background-color: #1877f2; }
-        .youtube { background-color: #ff0000; }
-
         .footer {
-            margin-top: 25px;
+            margin-top: 30px;
             font-size: 0.75rem;
-            color: #aaa;
+            color: #94a3b8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
     <div class="card-container">
+        <div class="card-header-bar"></div>
+
         <!-- Name information -->
         <h1 class="name">CED-Square Innovation center</h1>
-        <p class="title">Asst. Prof. Dr. Bunyong Rungroungdouyboon / Thammasat University</p>
+        <p class="title">Asst. Prof. Dr. Bunyong Rungroungdouyboon<br>Thammasat University</p>
 
         <!-- Contact -->
         <div class="links-container">
             <!-- Telephone number -->
             <a href="tel:0898154728" class="btn-link phone">
-                <i class="fa-solid fa-phone"></i> Tel: 089-815-4728
+                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                <span>Tel: 089-815-4728</span>
             </a>
 
             <!-- Email -->
-            <div class="email-box">
-                <i class="fa-solid fa-envelope"></i> rbunyong@engr.tu.ac.th
+            <div class="email-box email">
+                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <span>rbunyong@engr.tu.ac.th</span>
             </div>
 
             <!-- Line -->
             <a href="https://line.me/R/ti/p/phone/66898154728" target="_blank" class="btn-link line">
-                <i class="fa-brands fa-line"></i> LINE Official / ID
+                <div class="icon-box"><i class="fa-brands fa-line"></i></div>
+                <span>LINE Official / ID</span>
             </a>
 
             <!-- Facebook -->
             <a href="https://www.facebook.com/ceddlab/?locale=th_TH" target="_blank" class="btn-link facebook">
-                <i class="fa-brands fa-facebook"></i> Facebook (CEDD Lab)
+                <div class="icon-box"><i class="fa-brands fa-facebook"></i></div>
+                <span>Facebook (CEDD Lab)</span>
             </a>
 
             <!-- Youtube -->
             <a href="https://www.youtube.com/@ced2thammasatuniversity744" target="_blank" class="btn-link youtube">
-                <i class="fa-brands fa-youtube"></i> YouTube
+                <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+                <span>YouTube Channel</span>
             </a>
         </div>
 
